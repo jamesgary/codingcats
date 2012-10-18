@@ -2,12 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://codingcats.com
+title: Coding Cats
+subtitle: Because herding cats was too easy
+author: James Gary
 simple_search: http://google.com/search
-description:
+#description: "James Gary's blog. He like cats and does stuff sometimes."
+description: What a wacky description!
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

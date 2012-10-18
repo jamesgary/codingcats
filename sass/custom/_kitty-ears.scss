@@ -1,0 +1,56 @@
+@mixin kitty-ears($width, $border-width, $ratio) {
+  $angled-border-width: 1.2 * $border-width / $ratio;
+  $height: $ratio * $width;
+
+	height: $height - (2 * $angled-border-width) - $border-width;
+  position: relative;
+  z-index: 5;
+
+  .ear-container {
+    height: 0;
+    width: $width;
+    margin: 0 auto;
+    position: relative;
+    &.left { left: -25%; }
+    &.right { right: -25%; }
+
+    .ear {
+      border:        transparent solid 0.5 * $width;
+      border-bottom: $fur-color  solid $height - (2 * $angled-border-width);
+      border-top: 0;
+      height: 0;
+      width: 0;
+    }
+
+    .outline {
+      display: block;
+      border-bottom: $border-color solid $height - (2 * $angled-border-width);
+      left: -1 * $angled-border-width;
+      width: 2 * $angled-border-width;
+    }
+
+    .ear, .ear-top, .ear-inner {
+      position: absolute;
+    }
+
+    .ear-top {
+      $dim: 2 * $angled-border-width;
+      @include border-radius($angled-border-width);
+      background-color: $border-color;
+      height: $dim;
+      left: .5 * ($width - $dim);
+      top: (-.5 * $dim) * .7; // fudging, requires trig to be accurate O_o
+      width: $dim;
+    }
+
+    .ear-inner {
+      $inner-ratio: .7;
+      $h: $inner-ratio * ($height - (2 * $angled-border-width));
+      border: transparent solid ($inner-ratio * (.5 * $width));
+      border-top: transparent solid 0;
+      border-bottom: #fdd solid $h;
+      left: .5 * ($width - ($width * $inner-ratio));
+      top: $height - ($h + $angled-border-width + (2.3 * $border-width)); // fudge .3 for aesthetics
+    }
+  }
+}

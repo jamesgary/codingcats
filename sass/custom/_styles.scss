@@ -1,0 +1,100 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+@import "custom/kitty-ears";
+
+$border-width-thick: 5px;
+$border-width-thin: 2px;
+$fur-color: #dcdcdc;
+$border-color: #333;
+
+@mixin hide-side-borders {
+  @media only screen and (max-width: 1200px) { // because $max-width: 1200px
+    @include border-radius(0);
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+@mixin apply-borders {
+  @include border-radius($border-width-thick);
+  border: $border-width-thick solid $border-color;
+
+  @media only screen and (max-width: 992px) {
+    @include border-radius($border-width-thin);
+    border: $border-width-thin solid $border-color;
+  }
+}
+
+html {
+  @include background-image(linear-gradient(#5898FF, #2945E5)); // #6888F7
+}
+
+body header {
+  background: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  hgroup {
+    height: 0;
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+
+    h1, h2 {
+      font-family: 'Press Start 2P', Courier-New, monospace;
+      font-weight: normal;
+      line-height: 1em;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 0 0 4px black;
+    }
+
+    h1 a {
+      color: #fff;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    h2 {
+      $width: 40%;
+      color: #ddf;
+      font-size: 20px;
+      line-height: 1.4em;
+      margin-left: .5 * (100% - $width);
+      width: $width;
+    }
+  }
+}
+
+#ears {
+  @include kitty-ears(150px, $border-width-thick, 1.0);
+}
+
+@media only screen and (max-width: 992px) {
+  #ears {
+    @include kitty-ears(70px, $border-width-thin, 1.0);
+  }
+}
+
+body nav {
+  @include apply-borders;
+  @include border-bottom-radius(0);
+  @include hide-side-borders;
+  border-bottom: 0 !important;
+}
+
+#main {
+  @include apply-borders;
+  @include border-radius(0);
+  @include hide-side-borders;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+}
+
+body > footer {
+  @include apply-borders;
+  @include border-top-radius(0);
+  @include hide-side-borders;
+  border-top: 0 !important;
+}
