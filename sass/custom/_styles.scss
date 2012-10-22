@@ -47,12 +47,16 @@ body header {
       line-height: 1em;
       margin: 0;
       text-transform: uppercase;
-      text-shadow: 0 0 4px black;
+      text-shadow:
+        0 0 4px black,
+        0 0 4px black,
+        0 0 4px black;
     }
 
-    h1 a {
+    h1, h1 a {
       color: #fff;
       font-size: 30px;
+      margin-top: 20px;
       text-decoration: none;
     }
 
@@ -61,19 +65,50 @@ body header {
       color: #ddf;
       font-size: 20px;
       line-height: 1.4em;
-      margin-left: .5 * (100% - $width);
-      width: $width;
+      .breakline {
+        display: block;
+      }
     }
   }
 }
 
 #ears {
-  @include kitty-ears(150px, $border-width-thick, 1.0);
+  @include kitty-ears(150px, $border-width-thick, 1.0, 25%);
 }
 
 @media only screen and (max-width: 992px) {
+  body header hgroup {
+    margin-bottom: 10px;
+    padding: 0;
+    h1, h1 a {
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 14px;
+      line-height: 1.2em;
+      .breakline {
+        display: inline-block;
+        width: 1em;
+      }
+    }
+  }
   #ears {
-    @include kitty-ears(70px, $border-width-thin, 1.0);
+    @include kitty-ears(70px, $border-width-thin, 1.0, 35%);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body header hgroup {
+    h1, h1 a, h2 {
+      text-shadow:
+        0 0 4px black,
+        0 0 4px black,
+        0 0 4px black,
+        0 0 4px black,
+        0 0 8px white,
+        0 0 8px white;
+    }
   }
 }
 

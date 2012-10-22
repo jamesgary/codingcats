@@ -1,4 +1,4 @@
-@mixin kitty-ears($width, $border-width, $ratio) {
+@mixin kitty-ears($width, $border-width, $ratio, $spacer) {
   $angled-border-width: 1.2 * $border-width / $ratio;
   $height: $ratio * $width;
 
@@ -11,8 +11,8 @@
     width: $width;
     margin: 0 auto;
     position: relative;
-    &.left { left: -25%; }
-    &.right { right: -25%; }
+    &.left { left: -1 * $spacer; }
+    &.right { right: -1 * $spacer; }
 
     .ear {
       border:        transparent solid 0.5 * $width;
