@@ -29,7 +29,7 @@ html {
   @include background-image(linear-gradient(#5898FF, #2945E5)); // #6888F7
 }
 
-body header {
+body > header {
   background: none;
   margin: 0;
   padding: 0;
