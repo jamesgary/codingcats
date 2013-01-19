@@ -3,7 +3,8 @@ layout: post
 title: "Building with Sandcastle"
 date: 2012-09-30 21:59
 comments: true
-categories: sandcastle,haml,sass,scss,coffeescript,javascript,html5
+published: false
+categories: [sandcastle, haml, sass, scss, coffeescript, javascript, html5]
 ---
 
 We all have dreams, right? Let's say, for the moment, that your dream is to make something shiny on the internets. You can say there's two sides to this: front-end and back-end.

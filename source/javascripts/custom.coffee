@@ -20,7 +20,7 @@ adjectives = [
   "harrowing"
   "only the finest"
   "clinical"
-  "cripping"
+  "crippling"
   "horrible"
   "tasteful"
   "the"
@@ -41,7 +41,7 @@ custom =
     subtitle = @randomElement(subtitles).replace(" ~~ ", "<span class='breakline'></span>")
     $("header hgroup h2").html(subtitle)
   displayRandomPower: ->
-    power = [@randomElement(adjectives), @randomElement(nouns), 'and'].join(' ')
+    power = ['and', @randomElement(adjectives), @randomElement(nouns)].join(' ')
     $("footer .credit .random-power").html(power)
   randomElement: (array) ->
     random_index = Math.floor(Math.random() * array.length)
