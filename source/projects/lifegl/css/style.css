@@ -1,0 +1,199 @@
+@import url("jquery.miniColors.css");
+/* line 13, ../../../style/style.scss */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #123123;
+  cursor: default;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 24, ../../../style/style.scss */
+body canvas {
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE 7+ */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 32, ../../../style/style.scss */
+body .dashboard {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #c8e595;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px 10px 20px;
+  position: relative;
+}
+/* line 42, ../../../style/style.scss */
+body .dashboard h1 {
+  font-size: 1.4em;
+  margin: 0 0 0px;
+  padding: 0;
+}
+/* line 46, ../../../style/style.scss */
+body .dashboard h1 .tiny {
+  font-size: 0.75em;
+}
+/* line 48, ../../../style/style.scss */
+body .dashboard h1 .tiny, body .dashboard h1 .tiny a {
+  color: #83b52c;
+  display: inline-block;
+}
+/* line 54, ../../../style/style.scss */
+body .dashboard a {
+  cursor: pointer;
+}
+/* line 57, ../../../style/style.scss */
+body .dashboard select {
+  position: relative;
+  top: -3px;
+}
+/* line 61, ../../../style/style.scss */
+body .dashboard .button {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6e783f), color-stop(10%, #8c9a50), color-stop(20%, #6e783f), color-stop(50%, #4f572d));
+  background-image: -webkit-linear-gradient(#6e783f, #8c9a50 10%, #6e783f 20%, #4f572d 50%);
+  background-image: -moz-linear-gradient(#6e783f, #8c9a50 10%, #6e783f 20%, #4f572d 50%);
+  background-image: -o-linear-gradient(#6e783f, #8c9a50 10%, #6e783f 20%, #4f572d 50%);
+  background-image: linear-gradient(#6e783f, #8c9a50 10%, #6e783f 20%, #4f572d 50%);
+  -webkit-box-shadow: 0 0 1px black;
+  -moz-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #ddefbe;
+  padding: 5px 10px;
+  margin: 5px;
+}
+/* line 68, ../../../style/style.scss */
+body .dashboard .button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7d8947), color-stop(10%, #9ba95a), color-stop(20%, #7d8947), color-stop(50%, #5f6836));
+  background-image: -webkit-linear-gradient(#7d8947, #9ba95a 10%, #7d8947 20%, #5f6836 50%);
+  background-image: -moz-linear-gradient(#7d8947, #9ba95a 10%, #7d8947 20%, #5f6836 50%);
+  background-image: -o-linear-gradient(#7d8947, #9ba95a 10%, #7d8947 20%, #5f6836 50%);
+  background-image: linear-gradient(#7d8947, #9ba95a 10%, #7d8947 20%, #5f6836 50%);
+}
+/* line 76, ../../../style/style.scss */
+body .dashboard .button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5f6836), color-stop(10%, #7d8947), color-stop(20%, #5f6836), color-stop(50%, #404624));
+  background-image: -webkit-linear-gradient(#5f6836, #7d8947 10%, #5f6836 20%, #404624 50%);
+  background-image: -moz-linear-gradient(#5f6836, #7d8947 10%, #5f6836 20%, #404624 50%);
+  background-image: -o-linear-gradient(#5f6836, #7d8947 10%, #5f6836 20%, #404624 50%);
+  background-image: linear-gradient(#5f6836, #7d8947 10%, #5f6836 20%, #404624 50%);
+}
+/* line 90, ../../../style/style.scss */
+body .dashboard .playToggler {
+  font-weight: bold;
+  text-align: center;
+  width: 20px;
+  display: inline-block;
+}
+/* line 96, ../../../style/style.scss */
+body .dashboard .panel {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 99, ../../../style/style.scss */
+body .dashboard .panel h3 {
+  display: inline-block;
+}
+/* line 102, ../../../style/style.scss */
+body .dashboard .colorPicker input {
+  display: none;
+}
+/* line 103, ../../../style/style.scss */
+body .dashboard .colorPicker .miniColors-triggerWrap {
+  position: relative;
+  top: -4px;
+}
+/* line 108, ../../../style/style.scss */
+body .dashboard .rule {
+  display: block;
+}
+/* line 111, ../../../style/style.scss */
+body .dashboard span.dead {
+  font-weight: bold;
+  color: red;
+}
+/* line 115, ../../../style/style.scss */
+body .dashboard span.alive {
+  font-weight: bold;
+  color: #00e600;
+}
+/* line 120, ../../../style/style.scss */
+body .dashboard, body .hide {
+  margin: 20px;
+}
+/* line 123, ../../../style/style.scss */
+body .hide {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 1px 1px 1px black;
+  -moz-box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
+  background-image: -webkit-gradient(radial, 0 0, 0, 0 0, 30, color-stop(16.66667%, #eeeeee), color-stop(100%, #555555));
+  background-image: -webkit-radial-gradient(0 0, #eeeeee 5px, #555555 30px);
+  background-image: -moz-radial-gradient(0 0, #eeeeee 5px, #555555 30px);
+  background-image: -o-radial-gradient(0 0, #eeeeee 5px, #555555 30px);
+  background-image: radial-gradient(0 0, #eeeeee 5px, #555555 30px);
+}
+/* line 138, ../../../style/style.scss */
+body .hide:hover {
+  background-image: -webkit-gradient(radial, 0 0, 0, 0 0, 30, color-stop(16.66667%, #ffffff), color-stop(100%, #777777));
+  background-image: -webkit-radial-gradient(0 0, #ffffff 5px, #777777 30px);
+  background-image: -moz-radial-gradient(0 0, #ffffff 5px, #777777 30px);
+  background-image: -o-radial-gradient(0 0, #ffffff 5px, #777777 30px);
+  background-image: radial-gradient(0 0, #ffffff 5px, #777777 30px);
+}
+/* line 139, ../../../style/style.scss */
+body .hide:active {
+  background-image: -webkit-gradient(radial, 0 0, 0, 0 0, 30, color-stop(16.66667%, #cccccc), color-stop(100%, #222222));
+  background-image: -webkit-radial-gradient(0 0, #cccccc 5px, #222222 30px);
+  background-image: -moz-radial-gradient(0 0, #cccccc 5px, #222222 30px);
+  background-image: -o-radial-gradient(0 0, #cccccc 5px, #222222 30px);
+  background-image: radial-gradient(0 0, #cccccc 5px, #222222 30px);
+}
+/* line 141, ../../../style/style.scss */
+body .hide:after {
+  content: '\2013';
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 4px;
+  position: relative;
+  top: -3px;
+  text-shadow: 1px 1px 1px black;
+}
+/* line 152, ../../../style/style.scss */
+body .hide.hidden:after {
+  content: '+';
+  top: -2px;
+}

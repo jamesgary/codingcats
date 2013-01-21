@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <script data-main='./js/bootstrap.js' src='./js/vendor/require.js'></script>
+    <link href='./css/style.css' media='screen' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <canvas></canvas>
+    <div class='dashboard'>
+      <h1>
+        Game of Life - Powered by WebGL
+        <div class='tiny'>
+          [
+          <a href='http://github.com/jamesgary/lifeGL'>source</a>
+          ]
+        </div>
+      </h1>
+      <a class='button playToggler pause' title='Pause'>I I</a>
+      <a class='button reset'>Reset</a>
+      <div class='panel colorPicker'>
+        <h3>Cell:</h3>
+        <input class='cell' />
+      </div>
+      <div class='panel colorPicker'>
+        <h3>Background:</h3>
+        <input class='background' />
+      </div>
+      <div class='panel'>
+        <h3>Cell Size:</h3>
+        <select class='cellSize'></select>
+      </div>
+      <div class='rule'>
+        <span class='alive'>Live cells</span>
+        stay
+        <span class='alive'>alive</span>
+        if they have between
+        <select class='liveCellMin'></select>
+        and
+        <select class='liveCellMax'></select>
+        neighbors.
+      </div>
+      <div class='rule'>
+        <span class='dead'>Dead cells</span>
+        become
+        <span class='alive'>alive</span>
+        if they have between
+        <select class='deadCellMin'></select>
+        and
+        <select class='deadCellMax'></select>
+        neighbors.
+      </div>
+    </div>
+    <a class='hide' title='Toggle Dashboard'></a>
+  </body>
+</html>
