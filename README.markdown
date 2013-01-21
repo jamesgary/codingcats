@@ -10,6 +10,12 @@ To generate & preview:
 rake preview    # Watches, and mounts a webserver at http://localhost:4000
 ```
 
+To make a new post:
+
+```shell
+rake new_post['my post title']
+```
+
 Edit markup mostly in     `source/_includes/custom/`
 Edit styles mostly in     `sass/`
 Edit javascript mostly in `source/javascripts/`
