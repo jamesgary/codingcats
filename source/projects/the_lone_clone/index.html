@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <script data-main='js/bootstrap.js' src='js/vendor/require.js'></script>
+    <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div class='container'>
+      <div class='gameContainer'>
+        <div class='main-menu'>
+          <img class='player' src='assets/images/player.svg' />
+          <img class='clone' src='assets/images/clone.svg' />
+          <h1>The Lone Clone</h1>
+          <h2>
+            <em>e unum pluribus</em>
+          </h2>
+          <a class='start button'>Commence!</a>
+        </div>
+        <div class='level-select'>
+          <table class='levels'>
+            <tr>
+              <td class='level' data-level='1'>
+                1
+              </td>
+              <td class='level' data-level='2'>
+                2
+              </td>
+              <td class='level' data-level='3'>
+                3
+              </td>
+              <td class='level' data-level='4'>
+                4
+              </td>
+              <td class='level' data-level='5'>
+                5
+              </td>
+            </tr>
+            <tr>
+              <td class='level' data-level='6'>
+                6
+              </td>
+              <td class='level' data-level='7'>
+                7
+              </td>
+              <td class='level' data-level='8'>
+                8
+              </td>
+              <td class='level' data-level='9'>
+                9
+              </td>
+              <td class='level' data-level='10'>
+                10
+              </td>
+            </tr>
+            <tr>
+              <td class='level' data-level='11'>
+                11
+              </td>
+              <td class='level' data-level='12'>
+                12
+              </td>
+              <td class='level' data-level='13'>
+                13
+              </td>
+              <td class='level' data-level='14'>
+                14
+              </td>
+              <td class='level' data-level='15'>
+                15
+              </td>
+            </tr>
+            <tr>
+              <td class='level' data-level='16'>
+                16
+              </td>
+              <td class='level' data-level='17'>
+                17
+              </td>
+              <td class='level' data-level='18'>
+                18
+              </td>
+              <td class='level' data-level='19'>
+                19
+              </td>
+              <td class='level' data-level='20'>
+                20
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class='playground'>
+          <div class='level-fail popup'>
+            <div class='message bounceInDown'>
+              <h2>Bejabbers!</h2>
+              <h3>You became dead.</h3>
+              <h4>Hit 'r' or 'esc' or click 'Restart'.</h4>
+              <h4>I'll pretend it never happened.</h4>
+              <a class='button restart'>Restart</a>
+              <a class='button level-select'>Level Select</a>
+            </div>
+          </div>
+          <div class='level-complete popup'>
+            <div class='message bounceInDown'>
+              <h2>Huzzah!</h2>
+              <h3>You are one step closer to enlightenment.</h3>
+              <h4>Press SPACE to ascend to the next level</h4>
+            </div>
+          </div>
+          <div class='game-complete popup'>
+            <div class='message bounceInDown'>
+              <h2>YOU'VE HAVE BEATEN THE GAME!</h2>
+              <h3>Congratulations! You've solved the mystery of the clones and attained enlightenment!</h3>
+              <h3>You will never feel pain ever again! You and all your friends will always be happy and never die!</h3>
+              <h3>AND IT'S ALL BECAUSE YOU DID SUCH A GOOD JOB. I AM SO PROUD OF YOU.</h3>
+            </div>
+          </div>
+          <div class='paused popup'>
+            <div class='message bounceInDown quick'>
+              <h2>PAUSED</h2>
+              <h3>Please take this time to reflect on the inevitable heat death of the universe.</h3>
+              <a class='button resume'>Resume</a>
+              <a class='button level-select'>Level Select</a>
+            </div>
+          </div>
+          <canvas height='400' id='trippyBackground' width='600'></canvas>
+          <canvas height='400' id='canvas1' width='600'></canvas>
+          <canvas height='400' id='canvas2' width='600'></canvas>
+          <canvas height='400' id='canvas3' width='600'></canvas>
+          <canvas height='400' id='canvas4' width='600'></canvas>
+          <div class='clonesLeftContainer'>
+            <div class='clonesLeft'></div>
+            <label>clones left</label>
+          </div>
+          <!-- /%canvas#canvas{:width => 600, :height => 400} -->
+        </div>
+        <div class='audioManager'>
+          <div class='musicPlayer'></div>
+          <div class='controls'>
+            <a class='playing'>&#9835;</a>
+            <a class='paused'>&#9835;</a>
+            <span class='songInfo'>
+              Now playing:
+              <span class='songTitle'>...</span>
+              by
+              <a class='artistName' href='http://freemusicarchive.org/music/Pietnastka/' target='_blank'>Pietnastka</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class='credits'>
+        <h2>Thanks for playing! Here are some credits:</h2>
+        <h2>Music</h2>
+        Pietnastka (Piotr Kurek) -
+        <a href='http://www.piotrkurek.com/'>Website</a>
+        -
+        <a href='http://freemusicarchive.org/music/Pietnastka/'>FreeMusicArchive.org</a>
+        <h2>Textures</h2>
+        <a href='http://opengameart.org/users/bart'>Bart</a>
+        from
+        <a href='http://opengameart.org'>OpenGameArt.org</a>
+        -
+        <a href='http://opengameart.org/content/19-high-res-stone-and-concrete-texture-photos'>Texture Pack</a>
+        <h2>Physics</h2>
+        <a href='http://code.google.com/p/box2dweb/'>box2dweb</a>
+        <h2>Everything else</h2>
+        <a href='http://twitter.com/james_gary'>James Gary</a>
+        <a href='https://github.com/jamesgary/The-Lone-Clone'>Source code</a>
+      </div>
+    </div>
+  </body>
+</html>

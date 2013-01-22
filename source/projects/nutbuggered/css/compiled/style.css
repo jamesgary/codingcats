@@ -1,0 +1,1133 @@
+/* line 61, ../../../app/styles/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+/* line 67, ../../../app/styles/style.scss */
+html, body {
+  background: black;
+  overflow: hidden;
+  width: 910px;
+  height: 710px;
+}
+/* line 72, ../../../app/styles/style.scss */
+html, html ul, html li, html p, body, body ul, body li, body p {
+  font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 78, ../../../app/styles/style.scss */
+html a, body a {
+  color: blue;
+  text-decoration: none;
+}
+/* line 81, ../../../app/styles/style.scss */
+html a.link:hover, body a.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* line 87, ../../../app/styles/style.scss */
+html h2, body h2 {
+  font-size: 42px;
+}
+/* line 88, ../../../app/styles/style.scss */
+html h3, body h3 {
+  font-size: 36px;
+}
+/* line 89, ../../../app/styles/style.scss */
+html h4, body h4 {
+  font-size: 30px;
+}
+/* line 90, ../../../app/styles/style.scss */
+html h5, body h5 {
+  font-size: 24px;
+}
+/* line 91, ../../../app/styles/style.scss */
+html h5, body h5 {
+  font-size: 18px;
+}
+/* line 92, ../../../app/styles/style.scss */
+html .button, body .button {
+  -moz-border-radius: 29.4px;
+  -webkit-border-radius: 29.4px;
+  -o-border-radius: 29.4px;
+  -ms-border-radius: 29.4px;
+  -khtml-border-radius: 29.4px;
+  border-radius: 29.4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #38b5bd), color-stop(100%, #216a6e));
+  background-image: -webkit-linear-gradient(#38b5bd, #216a6e);
+  background-image: -moz-linear-gradient(#38b5bd, #216a6e);
+  background-image: -o-linear-gradient(#38b5bd, #216a6e);
+  background-image: -ms-linear-gradient(#38b5bd, #216a6e);
+  background-image: linear-gradient(#38b5bd, #216a6e);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid #154447;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 42px;
+  padding: 10.5px 35px 12.727px;
+  text-decoration: none;
+  text-shadow: #091e20 0 -1px 0;
+  font-size: 42px;
+}
+/* line 39, ../../../app/styles/style.scss */
+html .button:hover, body .button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #46c1c8), color-stop(100%, #267d82));
+  background-image: -webkit-linear-gradient(#46c1c8, #267d82);
+  background-image: -moz-linear-gradient(#46c1c8, #267d82);
+  background-image: -o-linear-gradient(#46c1c8, #267d82);
+  background-image: -ms-linear-gradient(#46c1c8, #267d82);
+  background-image: linear-gradient(#46c1c8, #267d82);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+html .button:active, body .button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #32a2a9), color-stop(100%, #1b575b));
+  background-image: -webkit-linear-gradient(#32a2a9, #1b575b);
+  background-image: -moz-linear-gradient(#32a2a9, #1b575b);
+  background-image: -o-linear-gradient(#32a2a9, #1b575b);
+  background-image: -ms-linear-gradient(#32a2a9, #1b575b);
+  background-image: linear-gradient(#32a2a9, #1b575b);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+html .button *, body .button * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+html .button.disabled, body .button.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+/* line 95, ../../../app/styles/style.scss */
+html .highlight, body .highlight {
+  background: green !important;
+}
+
+/* line 99, ../../../app/styles/style.scss */
+#minimize {
+  -moz-border-radius: 8.4px;
+  -webkit-border-radius: 8.4px;
+  -o-border-radius: 8.4px;
+  -ms-border-radius: 8.4px;
+  -khtml-border-radius: 8.4px;
+  border-radius: 8.4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #9a9a9a));
+  background-image: -webkit-linear-gradient(#cccccc, #9a9a9a);
+  background-image: -moz-linear-gradient(#cccccc, #9a9a9a);
+  background-image: -o-linear-gradient(#cccccc, #9a9a9a);
+  background-image: -ms-linear-gradient(#cccccc, #9a9a9a);
+  background-image: linear-gradient(#cccccc, #9a9a9a);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid gray;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 12px;
+  padding: 3px 10px 3.636px;
+  text-decoration: none;
+  text-shadow: #676767 0 -1px 0;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+  border-width: 1px;
+  z-index: 999;
+}
+/* line 39, ../../../app/styles/style.scss */
+#minimize:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d9d9d9), color-stop(100%, #a6a6a6));
+  background-image: -webkit-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: -moz-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: -o-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: -ms-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: linear-gradient(#d9d9d9, #a6a6a6);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#minimize:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c0c0c0), color-stop(100%, #8d8d8d));
+  background-image: -webkit-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: -moz-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: -o-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: -ms-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: linear-gradient(#c0c0c0, #8d8d8d);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#minimize * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#minimize.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+
+/* line 111, ../../../app/styles/style.scss */
+.screen {
+  height: 710px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 910px;
+}
+
+/* line 119, ../../../app/styles/style.scss */
+#floatRight {
+  float: right;
+}
+
+/* line 122, ../../../app/styles/style.scss */
+#wrapper {
+  background: green;
+  height: 710px;
+  width: 910px;
+  position: relative;
+}
+
+/* line 129, ../../../app/styles/style.scss */
+#splash_screen {
+  background: #30c70d url("../../img/splash.png") no-repeat left top;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+/* line 134, ../../../app/styles/style.scss */
+#splash_screen #blurb {
+  font-size: 28px;
+  text-align: center;
+  padding-top: 350px;
+}
+/* line 139, ../../../app/styles/style.scss */
+#splash_screen #start_from_splash.button {
+  margin-top: 50px;
+}
+
+/* line 144, ../../../app/styles/style.scss */
+#game_screen {
+  display: none;
+}
+/* line 146, ../../../app/styles/style.scss */
+#game_screen #infobar {
+  background: #154447;
+  color: white;
+  height: 30px;
+  padding: 5px;
+}
+/* line 152, ../../../app/styles/style.scss */
+#game_screen #infobar #speed div {
+  -moz-border-radius: 8.4px;
+  -webkit-border-radius: 8.4px;
+  -o-border-radius: 8.4px;
+  -ms-border-radius: 8.4px;
+  -khtml-border-radius: 8.4px;
+  border-radius: 8.4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #9a9a9a));
+  background-image: -webkit-linear-gradient(#cccccc, #9a9a9a);
+  background-image: -moz-linear-gradient(#cccccc, #9a9a9a);
+  background-image: -o-linear-gradient(#cccccc, #9a9a9a);
+  background-image: -ms-linear-gradient(#cccccc, #9a9a9a);
+  background-image: linear-gradient(#cccccc, #9a9a9a);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid gray;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 12px;
+  padding: 3px 10px 3.636px;
+  text-decoration: none;
+  text-shadow: #676767 0 -1px 0;
+  font-size: 12px;
+  border-width: 1px;
+  display: inline-block;
+}
+/* line 39, ../../../app/styles/style.scss */
+#game_screen #infobar #speed div:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d9d9d9), color-stop(100%, #a6a6a6));
+  background-image: -webkit-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: -moz-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: -o-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: -ms-linear-gradient(#d9d9d9, #a6a6a6);
+  background-image: linear-gradient(#d9d9d9, #a6a6a6);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#game_screen #infobar #speed div:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c0c0c0), color-stop(100%, #8d8d8d));
+  background-image: -webkit-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: -moz-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: -o-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: -ms-linear-gradient(#c0c0c0, #8d8d8d);
+  background-image: linear-gradient(#c0c0c0, #8d8d8d);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#game_screen #infobar #speed div * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#game_screen #infobar #speed div.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+/* line 156, ../../../app/styles/style.scss */
+#game_screen #infobar #speed div.highlight {
+  border-color: #2b2;
+}
+/* line 161, ../../../app/styles/style.scss */
+#game_screen #infobar #money {
+  left: 730px;
+  position: absolute;
+}
+/* line 164, ../../../app/styles/style.scss */
+#game_screen #infobar #money:before {
+  content: 'Money: $';
+}
+/* line 169, ../../../app/styles/style.scss */
+#game_screen #waves {
+  background-color: #d5a659;
+  display: inline-block;
+  float: left;
+  font-size: 24px;
+  height: 680px;
+  position: relative;
+  width: 150px;
+}
+/* line 178, ../../../app/styles/style.scss */
+#game_screen #waves #explainer {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  background: #90ee90;
+  border: 3px solid #2a5f00;
+  font-size: 11px;
+  left: 170px;
+  top: -25px;
+  padding: 15px;
+  position: absolute;
+  width: 264px;
+  z-index: 999;
+}
+/* line 196, ../../../app/styles/style.scss */
+#game_screen #waves #explainer:before {
+  border-style: solid;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent;
+  border-right-color: #2a5f00;
+  bottom: auto;
+  content: "";
+  left: -20px;
+  position: absolute;
+  top: 30px;
+}
+/* line 210, ../../../app/styles/style.scss */
+#game_screen #waves #explainer:after {
+  border-style: solid;
+  border-width: 7px 14px 7px 0;
+  border-color: transparent;
+  border-right-color: #90ee90;
+  bottom: auto;
+  content: "";
+  left: -14px;
+  position: absolute;
+  top: 33px;
+}
+/* line 224, ../../../app/styles/style.scss */
+#game_screen #waves #explainer p + p {
+  margin-top: 12px;
+}
+/* line 227, ../../../app/styles/style.scss */
+#game_screen #waves #explainer .close {
+  -moz-border-radius: 8.4px;
+  -webkit-border-radius: 8.4px;
+  -o-border-radius: 8.4px;
+  -ms-border-radius: 8.4px;
+  -khtml-border-radius: 8.4px;
+  border-radius: 8.4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f26662), color-stop(100%, #dc1812));
+  background-image: -webkit-linear-gradient(#f26662, #dc1812);
+  background-image: -moz-linear-gradient(#f26662, #dc1812);
+  background-image: -o-linear-gradient(#f26662, #dc1812);
+  background-image: -ms-linear-gradient(#f26662, #dc1812);
+  background-image: linear-gradient(#f26662, #dc1812);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid #ad130e;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 12px;
+  padding: 3px 10px 3.636px;
+  text-decoration: none;
+  text-shadow: #7e0e0a 0 -1px 0;
+  font-size: 12px;
+  -moz-border-radius: 99px;
+  -webkit-border-radius: 99px;
+  -o-border-radius: 99px;
+  -ms-border-radius: 99px;
+  -khtml-border-radius: 99px;
+  border-radius: 99px;
+  border-width: 1px;
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* line 39, ../../../app/styles/style.scss */
+#game_screen #waves #explainer .close:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f47d79), color-stop(100%, #ed221b));
+  background-image: -webkit-linear-gradient(#f47d79, #ed221b);
+  background-image: -moz-linear-gradient(#f47d79, #ed221b);
+  background-image: -o-linear-gradient(#f47d79, #ed221b);
+  background-image: -ms-linear-gradient(#f47d79, #ed221b);
+  background-image: linear-gradient(#f47d79, #ed221b);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#game_screen #waves #explainer .close:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f04f4a), color-stop(100%, #c51610));
+  background-image: -webkit-linear-gradient(#f04f4a, #c51610);
+  background-image: -moz-linear-gradient(#f04f4a, #c51610);
+  background-image: -o-linear-gradient(#f04f4a, #c51610);
+  background-image: -ms-linear-gradient(#f04f4a, #c51610);
+  background-image: linear-gradient(#f04f4a, #c51610);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#game_screen #waves #explainer .close * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#game_screen #waves #explainer .close.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+/* line 238, ../../../app/styles/style.scss */
+#game_screen #waves ul li {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f4e7d3), color-stop(100%, #dfbc82));
+  background-image: -webkit-linear-gradient(#f4e7d3, #dfbc82);
+  background-image: -moz-linear-gradient(#f4e7d3, #dfbc82);
+  background-image: -o-linear-gradient(#f4e7d3, #dfbc82);
+  background-image: -ms-linear-gradient(#f4e7d3, #dfbc82);
+  background-image: linear-gradient(#f4e7d3, #dfbc82);
+  border: 2px solid #d5a659;
+  border-top-color: white;
+  border-bottom-color: #d5a659;
+  height: 42px;
+  padding: 5px;
+  width: 100%;
+}
+/* line 248, ../../../app/styles/style.scss */
+#game_screen #waves ul li#needle {
+  -moz-box-shadow: 5px 0px 3px rgba(90, 0, 0, 0.9);
+  -webkit-box-shadow: 5px 0px 3px rgba(90, 0, 0, 0.9);
+  -o-box-shadow: 5px 0px 3px rgba(90, 0, 0, 0.9);
+  box-shadow: 5px 0px 3px rgba(90, 0, 0, 0.9);
+  background: transparent;
+  border: 4px ridge #ff4500;
+  border-left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+}
+/* line 260, ../../../app/styles/style.scss */
+#game_screen #map {
+  display: inline-block;
+  float: left;
+  height: 512px;
+  position: relative;
+  width: 512px;
+}
+/* line 266, ../../../app/styles/style.scss */
+#game_screen #map canvas {
+  position: absolute;
+}
+/* line 267, ../../../app/styles/style.scss */
+#game_screen #map #treeground {
+  pointer-events: auto;
+}
+/* line 268, ../../../app/styles/style.scss */
+#game_screen #map #dpad {
+  background: transparent url("../../img/dpad.svg") no-repeat center center;
+  background-size: 250px;
+  display: none;
+  height: 100%;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+}
+/* line 278, ../../../app/styles/style.scss */
+#game_screen #buttons {
+  background: #86a143;
+  display: inline-block;
+  float: left;
+  height: 512px;
+  width: 248px;
+}
+/* line 284, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser, #game_screen #buttons a.swatter {
+  -moz-border-radius: 12.6px;
+  -webkit-border-radius: 12.6px;
+  -o-border-radius: 12.6px;
+  -ms-border-radius: 12.6px;
+  -khtml-border-radius: 12.6px;
+  border-radius: 12.6px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #74c4bc), color-stop(100%, #3e948b));
+  background-image: -webkit-linear-gradient(#74c4bc, #3e948b);
+  background-image: -moz-linear-gradient(#74c4bc, #3e948b);
+  background-image: -o-linear-gradient(#74c4bc, #3e948b);
+  background-image: -ms-linear-gradient(#74c4bc, #3e948b);
+  background-image: linear-gradient(#74c4bc, #3e948b);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid #2f7069;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  padding: 4.5px 15px 5.455px;
+  text-decoration: none;
+  text-shadow: #204c47 0 -1px 0;
+  font-size: 18px;
+  height: 129.2px;
+  margin: 15px 0 10px 15px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 99.2px;
+}
+/* line 39, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser:hover, #game_screen #buttons a.swatter:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #85ccc4), color-stop(100%, #46a69c));
+  background-image: -webkit-linear-gradient(#85ccc4, #46a69c);
+  background-image: -moz-linear-gradient(#85ccc4, #46a69c);
+  background-image: -o-linear-gradient(#85ccc4, #46a69c);
+  background-image: -ms-linear-gradient(#85ccc4, #46a69c);
+  background-image: linear-gradient(#85ccc4, #46a69c);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser:active, #game_screen #buttons a.swatter:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #62bdb3), color-stop(100%, #37827a));
+  background-image: -webkit-linear-gradient(#62bdb3, #37827a);
+  background-image: -moz-linear-gradient(#62bdb3, #37827a);
+  background-image: -o-linear-gradient(#62bdb3, #37827a);
+  background-image: -ms-linear-gradient(#62bdb3, #37827a);
+  background-image: linear-gradient(#62bdb3, #37827a);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser *, #game_screen #buttons a.swatter * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.disabled, #game_screen #buttons a.swatter.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+/* line 293, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser img, #game_screen #buttons a.tower_chooser div, #game_screen #buttons a.swatter img, #game_screen #buttons a.swatter div {
+  position: absolute;
+  text-align: center;
+}
+/* line 297, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser div, #game_screen #buttons a.swatter div {
+  width: 100%;
+}
+/* line 299, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser div.name, #game_screen #buttons a.swatter div.name {
+  top: 6px;
+}
+/* line 302, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser div.cost, #game_screen #buttons a.swatter div.cost {
+  bottom: 5px;
+  color: #7e7;
+}
+/* line 305, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser div.cost:before, #game_screen #buttons a.swatter div.cost:before {
+  content: '$';
+}
+/* line 310, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.boxer img, #game_screen #buttons a.swatter.boxer img {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 18px;
+  top: 39px;
+}
+/* line 315, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.slingshot img, #game_screen #buttons a.swatter.slingshot img {
+  -moz-transform: rotate(85deg);
+  -webkit-transform: rotate(85deg);
+  -o-transform: rotate(85deg);
+  -ms-transform: rotate(85deg);
+  transform: rotate(85deg);
+  left: 13px;
+  top: 34px;
+}
+/* line 320, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.sumo img, #game_screen #buttons a.swatter.sumo img {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 15px;
+  top: 39px;
+}
+/* line 325, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.chilly img, #game_screen #buttons a.swatter.chilly img {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 16px;
+  top: 39px;
+}
+/* line 330, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.bazooka img, #game_screen #buttons a.swatter.bazooka img {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: -13px;
+  top: 21px;
+}
+/* line 335, ../../../app/styles/style.scss */
+#game_screen #buttons a.tower_chooser.swatter img, #game_screen #buttons a.swatter.swatter img {
+  left: 8px;
+  top: 28px;
+}
+/* line 341, ../../../app/styles/style.scss */
+#game_screen #infospace {
+  background: #2f7069;
+  color: white;
+  float: left;
+  height: 168px;
+  position: relative;
+  width: 760px;
+}
+/* line 348, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions {
+  margin: 10px;
+  height: 100%;
+  position: relative;
+}
+/* line 352, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions > div {
+  display: none;
+}
+/* line 354, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions > div h2 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+/* line 359, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions > div .img {
+  float: left;
+  height: 100%;
+}
+/* line 362, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions > div .img .img_frame {
+  height: 128px;
+  width: 128px;
+  overflow: hidden;
+}
+/* line 366, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions > div .img .img_frame img {
+  height: 128px;
+  width: 128px;
+}
+/* line 374, ../../../app/styles/style.scss */
+#game_screen #infospace #tower_descriptions > div.bazooka .img_frame img {
+  margin-top: 9px;
+  margin-left: -23px;
+  height: 164px;
+  width: 164px;
+}
+/* line 384, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades {
+  display: none;
+  height: 100%;
+  position: relative;
+}
+/* line 388, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades > div {
+  display: inline-block;
+  text-align: center;
+  width: 147px;
+}
+/* line 394, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades h6 {
+  text-shadow: rgba(0, 0, 0, 0.9) 0 2px 2px;
+  font-size: 26px;
+  margin: 10px 0 15px;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 401, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade {
+  height: 100%;
+  position: relative;
+  vertical-align: top;
+}
+/* line 405, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade:after {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(2%, rgba(255, 255, 255, 0)), color-stop(50%, #ffffff), color-stop(98%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 2%, #ffffff, rgba(255, 255, 255, 0) 98%);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 2%, #ffffff, rgba(255, 255, 255, 0) 98%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 2%, #ffffff, rgba(255, 255, 255, 0) 98%);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 2%, #ffffff, rgba(255, 255, 255, 0) 98%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 2%, #ffffff, rgba(255, 255, 255, 0) 98%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+}
+/* line 414, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .desc, #game_screen #infospace #upgrades .upgrade .conversion {
+  margin: 15px 0;
+  text-shadow: rgba(0, 0, 0, 0.9) 0 1px 1px;
+}
+/* line 418, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .conversion div {
+  display: inline;
+}
+/* line 420, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .conversion div.arrow:after {
+  content: "\A";
+  white-space: pre;
+}
+/* line 425, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button {
+  -moz-border-radius: 11.2px;
+  -webkit-border-radius: 11.2px;
+  -o-border-radius: 11.2px;
+  -ms-border-radius: 11.2px;
+  -khtml-border-radius: 11.2px;
+  border-radius: 11.2px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #95c063), color-stop(100%, #618637));
+  background-image: -webkit-linear-gradient(#95c063, #618637);
+  background-image: -moz-linear-gradient(#95c063, #618637);
+  background-image: -o-linear-gradient(#95c063, #618637);
+  background-image: -ms-linear-gradient(#95c063, #618637);
+  background-image: linear-gradient(#95c063, #618637);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid #476228;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 16px;
+  padding: 4px 13.333px 4.848px;
+  text-decoration: none;
+  text-shadow: #2d3e19 0 -1px 0;
+  font-size: 16px;
+  font-size: 12px;
+}
+/* line 39, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1c776), color-stop(100%, #6e983e));
+  background-image: -webkit-linear-gradient(#a1c776, #6e983e);
+  background-image: -moz-linear-gradient(#a1c776, #6e983e);
+  background-image: -o-linear-gradient(#a1c776, #6e983e);
+  background-image: -ms-linear-gradient(#a1c776, #6e983e);
+  background-image: linear-gradient(#a1c776, #6e983e);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #88b851), color-stop(100%, #54742f));
+  background-image: -webkit-linear-gradient(#88b851, #54742f);
+  background-image: -moz-linear-gradient(#88b851, #54742f);
+  background-image: -o-linear-gradient(#88b851, #54742f);
+  background-image: -ms-linear-gradient(#88b851, #54742f);
+  background-image: linear-gradient(#88b851, #54742f);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+/* line 428, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button .cost {
+  display: inline;
+  font-weight: bold;
+}
+/* line 431, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .upgrade .button .cost:before {
+  content: '$';
+}
+/* line 438, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority h6 {
+  font-size: 20px;
+}
+/* line 439, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority .button {
+  -moz-border-radius: 11.2px;
+  -webkit-border-radius: 11.2px;
+  -o-border-radius: 11.2px;
+  -ms-border-radius: 11.2px;
+  -khtml-border-radius: 11.2px;
+  border-radius: 11.2px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #38b5bd), color-stop(100%, #216a6e));
+  background-image: -webkit-linear-gradient(#38b5bd, #216a6e);
+  background-image: -moz-linear-gradient(#38b5bd, #216a6e);
+  background-image: -o-linear-gradient(#38b5bd, #216a6e);
+  background-image: -ms-linear-gradient(#38b5bd, #216a6e);
+  background-image: linear-gradient(#38b5bd, #216a6e);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid #154447;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 16px;
+  padding: 4px 13.333px 4.848px;
+  text-decoration: none;
+  text-shadow: #091e20 0 -1px 0;
+  font-size: 16px;
+  border-width: 1px;
+  font-size: 12px;
+  margin: 3px 0;
+  width: 82px;
+}
+/* line 39, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority .button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #46c1c8), color-stop(100%, #267d82));
+  background-image: -webkit-linear-gradient(#46c1c8, #267d82);
+  background-image: -moz-linear-gradient(#46c1c8, #267d82);
+  background-image: -o-linear-gradient(#46c1c8, #267d82);
+  background-image: -ms-linear-gradient(#46c1c8, #267d82);
+  background-image: linear-gradient(#46c1c8, #267d82);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority .button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #32a2a9), color-stop(100%, #1b575b));
+  background-image: -webkit-linear-gradient(#32a2a9, #1b575b);
+  background-image: -moz-linear-gradient(#32a2a9, #1b575b);
+  background-image: -o-linear-gradient(#32a2a9, #1b575b);
+  background-image: -ms-linear-gradient(#32a2a9, #1b575b);
+  background-image: linear-gradient(#32a2a9, #1b575b);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority .button * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority .button.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+/* line 445, ../../../app/styles/style.scss */
+#game_screen #infospace #upgrades .priority .button.short {
+  width: 58px;
+}
+/* line 452, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue, #game_screen #defeat_dialogue, #game_screen #pause_dialogue {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #116e11;
+  background: #90ee90;
+  height: 400px;
+  display: none;
+  font-size: 36px;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: 100px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+}
+/* line 466, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue#pause_dialogue h2, #game_screen #defeat_dialogue#pause_dialogue h2, #game_screen #pause_dialogue#pause_dialogue h2 {
+  font-size: 70px;
+}
+/* line 469, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue h2, #game_screen #victory_dialogue h3, #game_screen #victory_dialogue h4, #game_screen #defeat_dialogue h2, #game_screen #defeat_dialogue h3, #game_screen #defeat_dialogue h4, #game_screen #pause_dialogue h2, #game_screen #pause_dialogue h3, #game_screen #pause_dialogue h4 {
+  margin: 0;
+  padding: 0;
+}
+/* line 473, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue h4, #game_screen #defeat_dialogue h4, #game_screen #pause_dialogue h4 {
+  font-weight: normal;
+  margin: 24px 12px;
+}
+/* line 478, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue .button, #game_screen #defeat_dialogue .button, #game_screen #pause_dialogue .button {
+  -moz-border-radius: 22.4px;
+  -webkit-border-radius: 22.4px;
+  -o-border-radius: 22.4px;
+  -ms-border-radius: 22.4px;
+  -khtml-border-radius: 22.4px;
+  border-radius: 22.4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #38b5bd), color-stop(100%, #216a6e));
+  background-image: -webkit-linear-gradient(#38b5bd, #216a6e);
+  background-image: -moz-linear-gradient(#38b5bd, #216a6e);
+  background-image: -o-linear-gradient(#38b5bd, #216a6e);
+  background-image: -ms-linear-gradient(#38b5bd, #216a6e);
+  background-image: linear-gradient(#38b5bd, #216a6e);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.9);
+  border: 2px solid #154447;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 32px;
+  padding: 8px 26.667px 9.697px;
+  text-decoration: none;
+  text-shadow: #091e20 0 -1px 0;
+  font-size: 32px;
+  margin: 25px 0 0;
+  width: 93%;
+}
+/* line 39, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue .button:hover, #game_screen #defeat_dialogue .button:hover, #game_screen #pause_dialogue .button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #46c1c8), color-stop(100%, #267d82));
+  background-image: -webkit-linear-gradient(#46c1c8, #267d82);
+  background-image: -moz-linear-gradient(#46c1c8, #267d82);
+  background-image: -o-linear-gradient(#46c1c8, #267d82);
+  background-image: -ms-linear-gradient(#46c1c8, #267d82);
+  background-image: linear-gradient(#46c1c8, #267d82);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.99);
+}
+/* line 43, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue .button:active, #game_screen #defeat_dialogue .button:active, #game_screen #pause_dialogue .button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #32a2a9), color-stop(100%, #1b575b));
+  background-image: -webkit-linear-gradient(#32a2a9, #1b575b);
+  background-image: -moz-linear-gradient(#32a2a9, #1b575b);
+  background-image: -o-linear-gradient(#32a2a9, #1b575b);
+  background-image: -ms-linear-gradient(#32a2a9, #1b575b);
+  background-image: linear-gradient(#32a2a9, #1b575b);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  -o-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+/* line 48, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue .button *, #game_screen #defeat_dialogue .button *, #game_screen #pause_dialogue .button * {
+  cursor: pointer;
+}
+/* line 51, ../../../app/styles/style.scss */
+#game_screen #victory_dialogue .button.disabled, #game_screen #defeat_dialogue .button.disabled, #game_screen #pause_dialogue .button.disabled {
+  opacity: .95;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#aaaaaa, #999999);
+  background-image: -moz-linear-gradient(#aaaaaa, #999999);
+  background-image: -o-linear-gradient(#aaaaaa, #999999);
+  background-image: -ms-linear-gradient(#aaaaaa, #999999);
+  background-image: linear-gradient(#aaaaaa, #999999);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 1px solid transparent;
+  cursor: default;
+  text-shadow: 0 0 0;
+}
+
+/* line 486, ../../../app/styles/style.scss */
+#levels_screen {
+  background: #86a143;
+  display: none;
+  text-align: center;
+}
+/* line 490, ../../../app/styles/style.scss */
+#levels_screen h1 {
+  margin-top: 220px;
+}
+/* line 493, ../../../app/styles/style.scss */
+#levels_screen .level_chooser {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  width: 600px;
+}
