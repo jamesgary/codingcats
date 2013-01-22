@@ -7,7 +7,7 @@ footer: true
 
 ## lifeGL
 
-[![screenshot of lifeGL](images/lifegl.png)](/projects/lifegl/index.html)
+[![screenshot of lifeGL](/images/lifegl.png)](/projects/lifegl/index.html)
 
 [source](http://github.com/jamesgary/lifeGL) | [demo](/projects/lifegl/index.html)
 
@@ -31,7 +31,7 @@ __Lessons learned:__
 
 ## The Lone Clone
 
-[![screenshot of The Lone Clone](images/the_lone_clone.png)](/projects/the_lone_clone/index.html)
+[![screenshot of The Lone Clone](/images/the_lone_clone.png)](/projects/the_lone_clone/index.html)
 
 [source](http://github.com/jamesgary/The-Lone-Clone) | [demo](/projects/the_lone_clone/index.html)
 
@@ -55,7 +55,7 @@ __Lessons learned:__
 
 ## NutBuggered
 
-[![screenshot of NutBuggered](images/nutbuggered.png)](/projects/nutbuggered/index.html)
+[![screenshot of NutBuggered](/images/nutbuggered.png)](/projects/nutbuggered/index.html)
 
 [source](http://github.com/jamesgary/nutbuggered) | [demo](/projects/nutbuggered/index.html)
 
