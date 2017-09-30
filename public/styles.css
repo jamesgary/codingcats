@@ -1,0 +1,98 @@
+html {
+  background: linear-gradient(#5898ff, #2945e5);
+  min-height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+.header {
+  text-align: center;
+}
+
+.blog-title {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow:
+    0 0 4px #111,
+    0 0 4px #111,
+    0 0 4px #111;
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+}
+
+.main {
+  background: #f6f6f6;
+  border: 5px solid #222;
+  border-radius: 5px;
+  padding: 20px 40px;
+  box-shadow: inset 0 0 0px 15px #dcdcdc;
+}
+
+.footer {
+  color: white;
+  text-shadow: 0px 0px 3px #071561;
+  text-align: center;
+}
+
+.footer a {
+  color: #adf;
+}
+
+/* EARS */
+
+#ears {
+  height: 133px;
+  position: relative;
+  z-index: 5;
+}
+#ears .ear-container {
+  height: 0;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+#ears .ear-container.left {
+  left: -25%;
+}
+#ears .ear-container.right {
+  right: -25%;
+}
+#ears .ear-container .ear {
+  border: transparent solid 75px;
+  border-bottom: #dcdcdc solid 138px;
+  border-top: 0;
+  height: 0;
+  width: 0;
+}
+#ears .ear-container .outline {
+  display: block;
+  border-bottom: #333 solid 138px;
+  left: -6px;
+  width: 12px;
+}
+#ears .ear-container .ear, #ears .ear-container .ear-top, #ears .ear-container .ear-inner {
+  position: absolute;
+}
+#ears .ear-container .ear-top {
+  border-radius: 6px;
+  background-color: #333;
+  height: 12px;
+  left: 69px;
+  top: -4.2px;
+  width: 12px;
+}
+#ears .ear-container .ear-inner {
+  border: transparent solid 53px;
+  border-top: transparent solid 0;
+  border-bottom: #fdd solid 97px;
+  left: 23px;
+  top: 39px;
+}
