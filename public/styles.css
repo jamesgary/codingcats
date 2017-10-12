@@ -13,6 +13,16 @@ body {
 
 .header {
   text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 35px;
+}
+
+.header h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 24px;
 }
 
 .blog-title {

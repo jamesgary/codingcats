@@ -1,20 +1,30 @@
-module Main exposing (main, view)
+module Main exposing (decodeModel, main, view)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Json.Decode
 
 
 main =
-    view
+    view (Model 42 "wut")
 
 
-view =
-    div []
-        ([ node "link" [ href "public/styles.css", rel "stylesheet", type_ "text/css" ] []
-         , node "link" [ href "https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P", rel "stylesheet" ] []
-         ]
-            ++ bodyParts
-        )
+type alias Model =
+    { age : Int
+    , name : String
+    }
+
+
+decodeModel : Json.Decode.Decoder Model
+decodeModel =
+    Json.Decode.map2 Model
+        (Json.Decode.field "age" Json.Decode.int)
+        (Json.Decode.field "name" Json.Decode.string)
+
+
+view : Model -> Html msg
+view model =
+    fullHtml
 
 
 fullHtml =
@@ -45,24 +55,22 @@ bodyParts =
 
 headerStuff =
     header [ class "header" ]
-        [ div [ class "foo" ]
-            [ h1 []
-                [ a [ class "blog-title", href "/" ]
-                    [ text "codingcats.com" ]
+        [ h1 []
+            [ a [ class "blog-title", href "/" ]
+                [ text "codingcats.com" ]
+            ]
+        , div [ id "ears" ]
+            [ div [ class "ear-container left" ]
+                [ div [ class "ear outline" ] []
+                , div [ class "ear-top" ] []
+                , div [ class "ear" ] []
+                , div [ class "ear-inner" ] []
                 ]
-            , div [ id "ears" ]
-                [ div [ class "ear-container left" ]
-                    [ div [ class "ear outline" ] []
-                    , div [ class "ear-top" ] []
-                    , div [ class "ear" ] []
-                    , div [ class "ear-inner" ] []
-                    ]
-                , div [ class "ear-container right" ]
-                    [ div [ class "ear outline" ] []
-                    , div [ class "ear-top" ] []
-                    , div [ class "ear" ] []
-                    , div [ class "ear-inner" ] []
-                    ]
+            , div [ class "ear-container right" ]
+                [ div [ class "ear outline" ] []
+                , div [ class "ear-top" ] []
+                , div [ class "ear" ] []
+                , div [ class "ear-inner" ] []
                 ]
             ]
         ]
@@ -97,6 +105,16 @@ mainStuff =
             [ text "My name is "
             , a [ href "https://twitter.com/james_gary", target "_blank" ] [ text "James Gary" ]
             , text " and sometimes I do things."
+            ]
+        , div [ class "project" ]
+            [ h1 [] [ text "Constellations" ]
+            , img [ src "https://placekitten.com/200/300" ] []
+            , p [] [ text "A puzzle game written in Elm." ]
+            , p []
+                [ a [ href "https://constellationsgame.com" ] [ text "Demo" ]
+                , text " | "
+                , a [ href "https://github.com/jamesgary/constellations" ] [ text "Github" ]
+                ]
             ]
         ]
 
