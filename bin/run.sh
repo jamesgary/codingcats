@@ -1,2 +1,2 @@
 #!/bin/bash -e
-elm-live src/Main.elm --output=public/main.js --dir=public/ --pushstate
+elm-live Main.elm --output=public/main.js --dir=public/ --pushstate

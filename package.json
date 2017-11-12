@@ -1,5 +1,5 @@
 {
-  "name": "codingcats",
+  "name": "example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^8.0.17",
-    "elm-static-html-lib": "0.0.8-alpha.7",
-    "fs": "0.0.1-security"
+    "@types/node": "^8.0.17"
   }
 }
