@@ -45,16 +45,22 @@ body {
 }
 
 .main {
-  background: #f6f6f6;
+  background: #eee;
   border: 5px solid #222;
   border-radius: 5px;
-  padding: 20px 40px;
+  padding: 28px 40px;
   box-shadow: inset 0 0 0px 15px #dcdcdc;
 }
 
 .main-inner {
-  max-width: 640px;
+  max-width: 740px;
   margin: 0 auto;
+  background: #f6f6f6;
+  padding: 10px 50px;
+}
+
+.main-inner img {
+  max-width: 100%;
 }
 
 .footer {

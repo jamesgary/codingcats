@@ -3,6 +3,8 @@ module View exposing (decodeModel, viewAll, viewBody)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode
+import Json.Encode
+import Markdown
 
 
 type alias Model =
@@ -84,49 +86,105 @@ headerStuff =
 mainStuff =
     main_ [ class "main" ]
         [ div [ class "main-inner" ]
-            [ p []
-                [ text "My name is "
-                , a [ href "https://twitter.com/james_gary", target "_blank" ] [ text "James Gary" ]
-                , text " and sometimes I do things."
-                ]
+            [ Markdown.toHtml [ class "project" ]
+                """
+# My name is James Gary.
 
-            -- Constellations
-            , div [ class "project" ]
-                [ h1 [] [ text "Constellations" ]
-                , img [ src "http://fillmurray.com/605/400" ] []
-                , p [] [ text "A puzzle game written in Elm." ]
-                , p [] [ text "Status: In development. Last updated (2017)" ]
-                , p []
-                    [ a [ href "https://constellationsgame.com" ] [ text "Demo" ]
-                    , text " | "
-                    , a [ href "https://github.com/jamesgary/constellations" ] [ text "Github" ]
-                    ]
-                ]
+[Github](https://github.com/jamesgary) | [Twitter](https://twitter.com/james_gary)
 
-            -- Nutbuggered
-            , div [ class "project" ]
-                [ h1 [] [ text "NutBuggered" ]
-                , img [ src "http://codingcats.com/images/nutbuggered.png" ] []
-                , p [] [ text "NutBuggered is a tower defense game." ]
-                , p [] [ text "Status: In development. Last updated 2017" ]
-                , p []
-                    [ a [ href "https://constellationsgame.com" ] [ text "Demo" ]
-                    , text " | "
-                    , a [ href "https://github.com/jamesgary/constellations" ] [ text "Github" ]
-                    ]
-                ]
+Sometimes I do things.
 
-            --li [] [text "My goals:"]
-            --"Make my first fully HTML5 game"
-            --"Participate in the Pokki Challenge"
-            --"Keep codebase simple and maintainable"
-            --"Use Guard, Coffeescript, Sass, and Haml"
-            --"TDD with Jasmine"
-            --"Lessons learned:"
-            --"Don’t leave difficulty configuration to the last minute."
-            --"I’m both a better and worse artist than I thought."
-            --"RequireJS can unintentionally serve as a decent namespace pattern"
-            --"Accept the fact that “sucking is the first step to being sorta good at something” - Jake the Dog, Adventure Time"
+---
+
+# Constellations (Jan 2018)
+
+[![Screenshot of Constellations](/images/constellations.png)](http://constellationsgame.com)
+
+[Demo](http://constellationsgame.com) | [Github repo](https://github.com/jamesgary/constellations)
+
+A game about untangling the stars. Joyfully built with Elm. Still a work in progress!
+
+---
+
+# lifeGL (Jan 2013)
+
+[![Screenshot of lifeGL](http://codingcats.com/images/lifegl.png)](http://codingcats.com/projects/lifegl/index.html)
+
+[Demo](http://codingcats.com/projects/lifegl/index.html) | [Github repo](https://github.com/jamesgary/lifeGL)
+
+Super smooth Game of Life demo powered by WebGL.
+
+### My goals
+
+- Simulate Conway's Game of Life in high detail
+    - 1 pixel per cell
+    - 60 FPS at full screen
+- Get my hands dirty with WebGL
+- Adjust GoL rules in real time
+- Keep codebase simple and maintainable
+    - Use Guard, Coffeescript, Sass, and Haml
+
+### Lessons learned
+
+- WebGL is complicated. Definitely use a library next time.
+- WebGL still is not ready for primetime.
+  - Not everyone has a MacBook Pro or a $300+ video card.
+  - Mobile is still far from supporting WebGL.
+  - My Ubuntu machine does not play well with Radeons :(
+
+---
+
+# The Lone Clone (Dec 2012)
+
+[![Screenshot of The Lone Clone](http://codingcats.com/images/the_lone_clone.png)](http://codingcats.com/projects/the_lone_clone/index.html)
+
+[Demo](http://codingcats.com/projects/the_lone_clone/index.html) | [Github repo](https://github.com/jamesgary/The-Lone-Clone)
+
+Make your way through 20 puzzlicious levels using only your power of cloning.
+
+### My goals
+
+- Make a 'decent' game (i.e. one with music, beginning/middle/end, smooth gameplay)
+- Participate in the Github Game Off
+- Leverage a physics engine box2dweb
+- Present simple rules with elaborate possibilities
+- Keep codebase simple and maintainable
+  - Use Guard, Coffeescript, Sass, and Haml
+
+### Lessons learned
+
+- RequireJS is awesome and can do just about anything you want.
+  - Configuration can be frustrating, but payoff is worth it.
+- Learn quickly the limitations of vendored libraries.
+  - box2dweb freezes the browser when objects exceed their space.
+  - Should have researched & stress-tested more libraries
+- Deadlines are very good motivators.
+
+---
+
+# NutBuggered (Feb 2012)
+
+[![Screenshot of NutBuggered](http://codingcats.com/images/nutbuggered.png)](http://codingcats.com/projects/nutbuggered/index.html)
+
+[Demo](http://codingcats.com/projects/nutbuggered/index.html) | [Github repo](https://github.com/jamesgary/nutbuggered)
+
+Tower defense game featuring squirrels defending their homeland against swarms of bugs. No music, minimal graphics, but hey, it was my first game.
+
+### My goals
+
+- Make my first fully HTML5 game
+- Participate in the Pokki Challenge
+- Keep codebase simple and maintainable
+- Use Guard, Coffeescript, Sass, and Haml
+- TDD with Jasmine
+
+### Lessons learned
+
+- Don't leave difficulty configuration to the last minute.
+- I'm both a better and worse artist than I thought.
+- RequireJS can unintentionally serve as a decent namespace pattern
+- Accept the fact that "sucking is the first step to being sorta good at something" - Jake the Dog, Adventure Time
+"""
             ]
         ]
 
@@ -134,7 +192,8 @@ mainStuff =
 footerStuff =
     footer []
         [ p [ class "footer" ]
-            [ text "Copyright © 2017 - James Gary. Powered by "
+            [ span [ property "innerHTML" (Json.Encode.string "&copy;") ] []
+            , text " 2018 - James Gary. Powered by "
             , a [ href "https://github.com/jamesgary/codingcats", target "_blank" ] [ text "Elm" ]
             ]
         ]
